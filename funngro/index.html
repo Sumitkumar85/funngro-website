@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Funngro helps companies hire smart teenage talent for real projects.">
+    <meta name="keywords" content="Funngro, hire teens, internships, teen freelancers">
+    <meta name="author" content="Your Name">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funngro | Hire Teen Talent</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+<header>
+    <div class="header-content">
+        <div class="logo">
+            <i class="fas fa-rocket"></i> Funngro
+        </div>
+        <nav>
+            <a href="index.html" class="active">Company</a>
+            <a href="teen.html">Teens</a>
+        </nav>
+    </div>
+</header>
+
+<section class="hero">
+    <div class="hero-content">
+        <h2>Hire Smart Teen Talent</h2>
+        <p>Funngro connects companies with skilled teenagers for real-world projects.</p>
+        <button class="cta-button" onclick="scrollToFeatures()">Explore Now</button>
+    </div>
+</section>
+
+<section class="features" id="features">
+    <h3>Why Choose Funngro?</h3>
+    <div class="features-grid">
+        <div class="feature-card">
+            <i class="fas fa-user-check"></i>
+            <h4>Verified Talent</h4>
+            <p>Every teen is thoroughly vetted and portfolio-verified to ensure quality.</p>
+        </div>
+        <div class="feature-card">
+            <i class="fas fa-dollar-sign"></i>
+            <h4>Cost Effective</h4>
+            <p>Save up to 40% on hiring costs compared to traditional agencies.</p>
+        </div>
+        <div class="feature-card">
+            <i class="fas fa-rocket"></i>
+            <h4>Fast Delivery</h4>
+            <p>Get your projects completed faster with our energetic teen team.</p>
+        </div>
+        <div class="feature-card">
+            <i class="fas fa-chart-line"></i>
+            <h4>Track Progress</h4>
+            <p>Real-time dashboard to monitor project status and team performance.</p>
+        </div>
+    </div>
+</section>
+
+<section class="cta-section">
+    <h3>Ready to Hire?</h3>
+    <p>Post your project and find the perfect teen talent within 24 hours.</p>
+    <button class="cta-button" onclick="openModal()">Post a Project</button>
+</section>
+
+<section class="testimonials">
+    <h3>What Companies Say</h3>
+    <div class="testimonials-grid">
+        <div class="testimonial-card">
+            <p>"Funngro helped us find amazing talent for our design project. Quick, efficient, and professional!"</p>
+            <strong>- TechStart Inc.</strong>
+        </div>
+        <div class="testimonial-card">
+            <p>"The teens we hired were incredibly motivated and delivered beyond expectations."</p>
+            <strong>- Digital Solutions Co.</strong>
+        </div>
+        <div class="testimonial-card">
+            <p>"Best hiring platform we've used. Saved 50% on project costs!"</p>
+            <strong>- Creative Agency Plus</strong>
+        </div>
+    </div>
+</section>
+
+<div id="projectModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <h2>Post Your Project</h2>
+        <form onsubmit="submitProject(event)">
+            <input type="text" placeholder="Project Title" required>
+            <textarea placeholder="Project Description" rows="5" required></textarea>
+            <input type="number" placeholder="Budget ($)" min="50" required>
+            <button type="submit" class="submit-btn">Submit Project</button>
+        </form>
+    </div>
+</div>
+
+<footer>
+    <div class="footer-content">
+        <p>&copy; 2025 Funngro. All Rights Reserved.</p>
+        <div class="social-links">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

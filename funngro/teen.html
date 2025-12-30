@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Funngro helps teenagers gain real work experience and earn money.">
+    <meta name="keywords" content="Funngro teens, earn money online, teen internships">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funngro | For Teens</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+<header>
+    <div class="header-content">
+        <div class="logo">
+            <i class="fas fa-rocket"></i> Funngro
+        </div>
+        <nav>
+            <a href="index.html">Company</a>
+            <a href="teen.html" class="active">Teens</a>
+        </nav>
+    </div>
+</header>
+
+<section class="hero">
+    <div class="hero-content">
+        <h2>Learn. Work. Earn.</h2>
+        <p>Get real company projects and build your career early with Funngro.</p>
+        <button class="cta-button" onclick="openSignupModal()">Join Now</button>
+    </div>
+</section>
+
+<section class="features" id="benefits">
+    <h3>Why Teens Love Funngro</h3>
+    <div class="features-grid">
+        <div class="feature-card">
+            <i class="fas fa-briefcase"></i>
+            <h4>Real Projects</h4>
+            <p>Work on actual projects from real companies and build your portfolio.</p>
+        </div>
+        <div class="feature-card">
+            <i class="fas fa-coins"></i>
+            <h4>Earn Money</h4>
+            <p>Get paid competitively for your skills and contribution.</p>
+        </div>
+        <div class="feature-card">
+            <i class="fas fa-graduation-cap"></i>
+            <h4>Skill Development</h4>
+            <p>Learn industry skills from mentors and gain valuable experience.</p>
+        </div>
+        <div class="feature-card">
+            <i class="fas fa-network-wired"></i>
+            <h4>Network</h4>
+            <p>Connect with companies and professionals in your field of interest.</p>
+        </div>
+    </div>
+</section>
+
+<section class="how-works">
+    <h3>How It Works</h3>
+    <div class="steps-container">
+        <div class="step">
+            <div class="step-number">1</div>
+            <h4>Create Profile</h4>
+            <p>Sign up and showcase your skills, experience, and interests.</p>
+        </div>
+        <div class="step">
+            <div class="step-number">2</div>
+            <h4>Browse Projects</h4>
+            <p>Explore available projects from companies looking for teen talent.</p>
+        </div>
+        <div class="step">
+            <div class="step-number">3</div>
+            <h4>Apply & Work</h4>
+            <p>Apply to projects you love and start working with companies.</p>
+        </div>
+        <div class="step">
+            <div class="step-number">4</div>
+            <h4>Get Paid</h4>
+            <p>Complete projects and receive payment for your hard work.</p>
+        </div>
+    </div>
+</section>
+
+<section class="stats">
+    <div class="stat-item">
+        <h3>500+</h3>
+        <p>Active Teens</p>
+    </div>
+    <div class="stat-item">
+        <h3>$2.5M+</h3>
+        <p>Earned by Teens</p>
+    </div>
+    <div class="stat-item">
+        <h3>1000+</h3>
+        <p>Projects Completed</p>
+    </div>
+    <div class="stat-item">
+        <h3>95%</h3>
+        <p>Client Satisfaction</p>
+    </div>
+</section>
+
+<section class="success-stories">
+    <h3>Success Stories</h3>
+    <div class="testimonials-grid">
+        <div class="testimonial-card">
+            <p>"I earned $3000 in 3 months working on web development projects. This platform changed my career path!"</p>
+            <strong>- Priya, 17 (Developer)</strong>
+        </div>
+        <div class="testimonial-card">
+            <p>"The projects helped me build a portfolio that got me into a top tech college. Highly recommended!"</p>
+            <strong>- Arjun, 16 (Designer)</strong>
+        </div>
+        <div class="testimonial-card">
+            <p>"Amazing experience. I learned more in 6 months than I would in a year of school. Love it!"</p>
+            <strong>- Zara, 18 (Content Creator)</strong>
+        </div>
+    </div>
+</section>
+
+<div id="signupModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeSignupModal()">&times;</span>
+        <h2>Join Funngro</h2>
+        <form onsubmit="submitSignup(event)">
+            <input type="text" placeholder="Full Name" required>
+            <input type="email" placeholder="Email Address" required>
+            <input type="tel" placeholder="Phone Number" required>
+            <select required>
+                <option value="">Select Your Skill</option>
+                <option value="web-dev">Web Development</option>
+                <option value="design">Design & UI/UX</option>
+                <option value="content">Content Writing</option>
+                <option value="marketing">Digital Marketing</option>
+                <option value="other">Other</option>
+            </select>
+            <button type="submit" class="submit-btn">Create Account</button>
+        </form>
+    </div>
+</div>
+
+<footer>
+    <div class="footer-content">
+        <p>&copy; 2025 Funngro. All Rights Reserved. | Start your journey today!</p>
+        <div class="social-links">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+<script>
+    const signupModal = document.getElementById('signupModal');
+    
+    function openSignupModal() {
+        signupModal.style.display = 'block';
+        document.body.style.overflow = 'hidden';
+    }
+    
+    function closeSignupModal() {
+        signupModal.style.display = 'none';
+        document.body.style.overflow = 'auto';
+    }
+    
+    function submitSignup(event) {
+        event.preventDefault();
+        alert('🎉 Welcome to Funngro! Check your email for next steps.');
+        event.target.reset();
+        closeSignupModal();
+    }
+    
+    window.onclick = function(event) {
+        if (event.target === signupModal) {
+            closeSignupModal();
+        }
+    }
+</script>
+</body>
+</html>
